@@ -1,0 +1,164 @@
+/*Alle Elemente*/
+* {
+  /* Wichtig für responsive*/
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/*
+Alle Links sollen sein:
+
+- Schwarze Schriftfarbe
+- Grosse Buchstaben
+- Fette Schrift
+- Nicht mehr unterstrichen
+*/
+
+.nav-link {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*
+Entferne von der Liste:
+- die Bulletpoints
+- padding & margin
+*/
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu {
+  border: 0;
+  background-color: transparent;
+}
+
+nav {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+/*Alle Links on hover in Farbe #374a67 */
+a:hover {
+  color: #374a67;
+}
+
+#intro {
+  background-image: url("img/intro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: ;
+justify-content: ;
+
+}
+.button {
+  color: #374a67;
+  text-transform: uppercase;
+  padding: 1rem;
+  background-color: white;
+  border: 2px solid #374a67;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  transition: 0.45s ease;
+}
+.button:hover {
+background-color: #374a67;
+color: #fff ;
+border-color: #fff;
+}
+
+#articles {
+  text-align: center;
+}
+.card {
+  /*
+  runde Ecken:5px
+  Schatten um die Card
+  */
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  margin: 1rem;
+  overflow: clip;
+  padding-bottom: 0.5;
+
+}
+/*einfaches responsieves Bild*/
+.card img{
+width: 100%;
+display: block;
+}
+.blue{
+  background-color: #374a67;
+  color: white;
+  display: block;
+  margin: 0.5rem;
+
+}
+.blue:hover{
+  background-color: white;
+  color: #374a67;
+}
+#newsletter{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #04122b;
+  text-align: center;
+  color: #fff;
+}
+#email{
+  padding: 1rem;
+  border: 2px solid #374a67;
+  border-radius: 5px;
+}
+
+h1 {
+  color: white;
+}
+/*Media Query / Breakpoints*/
+@media (min-width: 1160px) {
+  #menu {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  {
+    padding: 5px;
+  }
