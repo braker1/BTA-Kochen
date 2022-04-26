@@ -156,6 +156,13 @@ form {
   align-items: center;
 } */
 
+.screenreader {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  display: block;
+}
+
 /*Media Query / Breakpoints*/
 @media (min-width: 1160px) {
   #menu {
